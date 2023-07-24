@@ -1,4 +1,4 @@
-                                                                       **AWS Basics**
+**AWS Basics**
 
 * Amazon Web Service (AWS) is a cloud provider platform to host your applications quickly and securely.
 
@@ -12,4 +12,4 @@
 
  * We mostly deploy or hosted our applications on AWS Elastic Compute Cloud (EC2). So, let's dive into the basics of it.
 
-                                                              **Basic overview of AWS EC2 service**
+   **Basic overview of AWS EC2 service**
