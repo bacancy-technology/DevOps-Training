@@ -1,4 +1,4 @@
-                                                                          **AWS Basics**
+                                                                       **AWS Basics**
 
 * Amazon Web Service (AWS) is a cloud provider platform to host your applications quickly and securely.
 
