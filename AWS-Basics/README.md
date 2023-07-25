@@ -1,6 +1,6 @@
 **AWS Basics**
 
-**Pre-requisites:**
+Pre-requisites:
   - AWS account access
   - Curiosity to learn new things
 
