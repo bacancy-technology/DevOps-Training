@@ -1,8 +1,8 @@
 **AWS Basics**
 
-Pre-requisites:
-  - AWS account access
-  - Curiosity to learn new things
+**Pre-requisites:**
+- AWS account access
+- Curiosity to learn new things
 
 * Amazon Web Service (AWS) is a cloud provider platform to host your applications quickly and securely.
 
