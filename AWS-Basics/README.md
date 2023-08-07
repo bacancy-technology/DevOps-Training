@@ -19,3 +19,4 @@
 **Basic overview of AWS EC2 service**
 
 - Live server creation demo by Joy.
+- To login into AWS https://aws.amazon.com/console/
