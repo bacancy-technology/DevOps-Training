@@ -108,7 +108,8 @@ Make sure to change ‘your_bucket_name_here’ to your bucket name.
 3. Upload build/dist folder in the s3 bucket 
     
 ```sh
-aws s3 sync build/* s3://DEST_BUCKET// (give your bucket name )
+cd build 
+aws s3 sync . s3://DEST_BUCKET// (give your bucket name )
 ```    
    (manually you can drag and drop build/dist folder files to s3 bucket)
  
