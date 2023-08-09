@@ -49,8 +49,6 @@ cd react-demo
 ```sh
 npm run build 
 ```
-5. Upload build/dist folder in the s3 bucket 
-   - manually you can drag and drop build folder files and upload to bucket.
 
 
 ## Step 2:Configure an S3 bucket for static web hosting.
@@ -63,15 +61,19 @@ npm run build
 
 ![Alt text](image.png)
 
+
 Click on the ‘Create Bucket’ button
+
 
 ![Alt text](image-1.png)
 
 Fill the bucket name, and untick ‘Block all public access’.
+
 You’ll want to allow public access so everyone can access your website.
 After that, you have to acknowledge the change you did by ticking the acknowledge warning on the bottom of this area.
 
 ![Alt text](image-2.png)
+
 
 Click on the ‘Create Bucket’ at the bottom of the creation page.
 Get into your newly created bucket and click on the ‘Properties’ on the bucket’s navbar on the top.
@@ -100,9 +102,9 @@ Make sure to change ‘your_bucket_name_here’ to your bucket name.
 }
 ```
 
-5. Upload build/dist folder in the s3 bucket 
+3. Upload build/dist folder in the s3 bucket 
    - manually you can drag and drop build folder files and upload to bucket.
-   
+
 Once finished, get into your S3 bucket and click on ‘Properties’, then scroll to the bottom and you’ll see a link to your hosted website.
 
 ![Alt text](image-6.png)
