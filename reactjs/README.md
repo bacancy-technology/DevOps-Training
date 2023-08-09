@@ -40,6 +40,62 @@ cd react-demo
 npm run build 
 ```
 
+## Step 2:Configure an S3 bucket for static web hosting.
+
+1. login to your aws account 
+   https://aws.amazon.com/console/
+
+2. Open s3 bucket 
+- Get into AWS and search for S3 in the search bar.
+
+![Alt text](image.png)
+
+Click on the ‘Create Bucket’ button
+
+![Alt text](image-1.png)
+
+Fill the bucket name, and untick ‘Block all public access’.
+You’ll want to allow public access so everyone can access your website.
+After that, you have to acknowledge the change you did by ticking the acknowledge warning on the bottom of this area.
+
+![Alt text](image-2.png)
+
+Click on the ‘Create Bucket’ at the bottom of the creation page.
+Get into your newly created bucket and click on the ‘Properties’ on the bucket’s navbar on the top.
+
+
+![Alt text](image-3.png)
+
+![Alt text](image-4.png)
+
+Scroll to the bottom and click ‘Edit’ on the right side of ‘Static Web Hosting’, and copy the following settings:
+
+![Alt text](image-5.png)
+
+Get back to the main bucket’s navbar and click on ‘Permissions’, and fill the following piece of code into the Bucket Policy area:
+Make sure to change ‘your_bucket_name_here’ to your bucket name.
+
+
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "PublicReadGetObject",
+            "Effect": "Allow",
+            "Principal": "*",
+            "Action": "s3:GetObject",
+            "Resource": "arn:aws:s3:::your_bucket_name_here/*"
+        }
+    ]
+}
+
+
+
+
+
+Congratulations! You’ve successfully deployed your React application to the AWS S3 Static Web Hosting service.
+
+And that’s how it’s done. Thanks for reading.
 
 
 
