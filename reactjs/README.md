@@ -66,7 +66,6 @@ Get into your newly created bucket and click on the ‘Properties’ on the buck
 
 ![Alt text](image-3.png)
 
-![Alt text](image-4.png)
 
 Scroll to the bottom and click ‘Edit’ on the right side of ‘Static Web Hosting’, and copy the following settings:
 
@@ -75,7 +74,7 @@ Scroll to the bottom and click ‘Edit’ on the right side of ‘Static Web Hos
 Get back to the main bucket’s navbar and click on ‘Permissions’, and fill the following piece of code into the Bucket Policy area:
 Make sure to change ‘your_bucket_name_here’ to your bucket name.
 
-
+```sh
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -88,7 +87,7 @@ Make sure to change ‘your_bucket_name_here’ to your bucket name.
         }
     ]
 }
-
+```
 
 
 
