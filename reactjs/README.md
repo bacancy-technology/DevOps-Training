@@ -1,7 +1,7 @@
 
 # Deploy ReactJS App with s3 static Hosting 
 
-This repository contains demonstrates how to use PM2 for process management and Nginx as a reverse proxy. Follow the steps below to set up the environment and run the application.
+
 
 * Create a simple react app.
 * Configure an S3 bucket for static web hosting.
@@ -24,6 +24,11 @@ AWS Secret Access Key [None]: Your AWS access key
 Default region name [None]: Default region (i.e. us-east-1)
 Default output format [None]: ENTER
 ```
+**You’ll need to have Node 14.0.0 or later version on your local development machine (but it’s not required on the server). We recommend using the latest LTS version. You can use nvm (macOS/Linux) or nvm-windows to switch Node versions between different projects.
+
+
+
+
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -46,6 +51,13 @@ cd react-demo
 ```
 
 4. Build the react application
+Builds the app for production to the build folder.
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.
+Your app is ready to be deployed!
+
+
 ```sh
 npm run build 
 ```
@@ -120,6 +132,10 @@ Once finished, get into your S3 bucket and click on ‘Properties’, then scrol
 ![Alt text](image-6.png)
 
 
+
+
+
+![Alt text](image-7.png)
 
 Congratulations! You’ve successfully deployed your React application to the AWS S3 Static Web Hosting service.
 
