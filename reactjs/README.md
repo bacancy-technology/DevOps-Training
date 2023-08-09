@@ -14,9 +14,6 @@ AWS IAM User
 AWS CLI installed (and additional dependencies)
 AWS Credentials Locally Setup
 
-#### Recorded terminal sessions
-[![Recorded terminal sessions](https://asciinema.org/a/598343.svg)](https://asciinema.org/a/598343)
-
 ## Step 1: create or deploy a simple react app. 
 
 ```bash
