@@ -14,19 +14,31 @@ AWS IAM User
 AWS CLI installed (and additional dependencies)
 AWS Credentials Locally Setup
 
+
+<!-- GETTING STARTED -->
+## Getting Started
+
 ## Step 1: create or deploy a simple react app. 
 
-```bash
-npm install -g create-react-app
+1. create a react application
+ ```sh
+ npm install -g create-react-app 
+ ```
 
-```bash
+2. give name to your application 
+```sh
 npx create-react-app react-demo
+```
 
-```bash
+3. go to project directory 
+```sh
 cd react-demo
+```
 
-```bash
+4. Build the react application
+```sh
 npm run build 
+```
 
 
 
