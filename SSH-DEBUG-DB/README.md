@@ -151,4 +151,31 @@ DBA:
     3. MongoDB:
     mongorestore --host hostname --port port --db database_name /path/to/backup
 
+    For large databases, sometimes it takes time to restore, sometimes it paused as well. 
+
+DEBUG:
+Nginx:
+Nginx logs are typically located in the /var/log/nginx/ directory on a Unix-like system. The exact location may vary based on your system's configuration. Nginx generates various log files to record different types of information about server activity and requests. Here are some common Nginx log files and their purposes:
+
+    Access Logs:
+        Location: /var/log/nginx/access.log
+        Purpose: Records information about each request made to the Nginx server, including the client's IP address, requested URL, response status, and user agent.
+
+    Error Logs:
+        Location: /var/log/nginx/error.log
+        Purpose: Logs errors, warnings, and other issues encountered by Nginx during operation. This includes information about server configuration issues, proxy errors, and more.
     
+Apache:
+Apache HTTP Server generates various log files to record information about server activity and requests. The location of these log files can vary based on your system's configuration, but they are often found in the /var/log/apache2/ or /var/log/httpd/ directories on Unix-like systems. Here are some common Apache log files and their purposes:
+
+    Access Logs:
+        Location: /var/log/apache2/access.log (Debian/Ubuntu) or /var/log/httpd/access_log (CentOS/RHEL)
+        Purpose: Records information about each request made to the Apache server, including the client's IP address, requested URL, response status, and user agent.
+
+    Error Logs:
+        Location: /var/log/apache2/error.log (Debian/Ubuntu) or /var/log/httpd/error_log (CentOS/RHEL)
+        Purpose: Logs errors, warnings, and other issues encountered by Apache during operation. This includes information about server configuration issues, modules, and more.
+
+PM2:
+For watching logs in pm2, use following command:
+pm2 logs <process_id>
