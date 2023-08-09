@@ -30,9 +30,9 @@ Default output format [None]: ENTER
 
 ## Step 1: create or deploy a simple react app. 
 
-1. create a react application
+1. create or clone a react application
  ```sh
- npm install -g create-react-app 
+ npm install -g create-react-app OR https://github.com/ripalshah710/react-demo.git
  ```
 
 2. give name to your application 
