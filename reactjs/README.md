@@ -14,6 +14,16 @@ AWS IAM User
 AWS CLI installed (and additional dependencies)
 AWS Credentials Locally Setup
 
+Build Your React Application
+- Before you start building your react application and to deploy your application directly to S3 from your machine, you’ll have to configure your AWS account using the AWS CLI that was requested in this tutorial, to do so, get into your terminal and follow those commands:
+
+```sh
+aws configure
+AWS Access Key ID [None]: Your AWS key ID
+AWS Secret Access Key [None]: Your AWS access key
+Default region name [None]: Default region (i.e. us-east-1)
+Default output format [None]: ENTER
+```
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -39,6 +49,9 @@ cd react-demo
 ```sh
 npm run build 
 ```
+5. Upload build/dist folder in the s3 bucket 
+   - manually you can drag and drop build folder files and upload to bucket.
+
 
 ## Step 2:Configure an S3 bucket for static web hosting.
 
@@ -69,8 +82,6 @@ Get into your newly created bucket and click on the ‘Properties’ on the buck
 
 Scroll to the bottom and click ‘Edit’ on the right side of ‘Static Web Hosting’, and copy the following settings:
 
-![Alt text](image-5.png)
-
 Get back to the main bucket’s navbar and click on ‘Permissions’, and fill the following piece of code into the Bucket Policy area:
 Make sure to change ‘your_bucket_name_here’ to your bucket name.
 
@@ -89,6 +100,12 @@ Make sure to change ‘your_bucket_name_here’ to your bucket name.
 }
 ```
 
+5. Upload build/dist folder in the s3 bucket 
+   - manually you can drag and drop build folder files and upload to bucket.
+   
+Once finished, get into your S3 bucket and click on ‘Properties’, then scroll to the bottom and you’ll see a link to your hosted website.
+
+![Alt text](image-6.png)
 
 
 
