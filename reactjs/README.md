@@ -53,8 +53,10 @@ npm run build
 
 ## Step 2:Configure an S3 bucket for static web hosting.
 
+
 1. login to your aws account 
    https://aws.amazon.com/console/
+
 
 2. Open s3 bucket 
 - Get into AWS and search for S3 in the search bar.
@@ -66,6 +68,7 @@ Click on the ‘Create Bucket’ button
 
 
 ![Alt text](image-1.png)
+
 
 Fill the bucket name, and untick ‘Block all public access’.
 
@@ -103,9 +106,11 @@ Make sure to change ‘your_bucket_name_here’ to your bucket name.
 ```
 
 3. Upload build/dist folder in the s3 bucket 
-   - manually you can drag and drop build folder files and upload to bucket.
+   * manually you can drag and drop build folder files and upload to bucket.
+
 
 Once finished, get into your S3 bucket and click on ‘Properties’, then scroll to the bottom and you’ll see a link to your hosted website.
+
 
 ![Alt text](image-6.png)
 
