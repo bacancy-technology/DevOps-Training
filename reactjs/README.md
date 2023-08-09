@@ -106,7 +106,11 @@ Make sure to change ‘your_bucket_name_here’ to your bucket name.
 ```
 
 3. Upload build/dist folder in the s3 bucket 
-   * manually you can drag and drop build folder files and upload to bucket.
+    
+```sh
+aws s3 sync build/* s3://DEST_BUCKET// (give your bucket name )
+    
+   * manually you can drag and drop build folder files
 
 
 Once finished, get into your S3 bucket and click on ‘Properties’, then scroll to the bottom and you’ll see a link to your hosted website.
