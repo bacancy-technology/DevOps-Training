@@ -48,6 +48,9 @@ npx create-react-app react-demo
 3. go to project directory 
 ```sh
 cd react-demo
+
+install the packages
+npm i 
 ```
 
 4. Build the react application
