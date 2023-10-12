@@ -156,11 +156,12 @@ jobs:
 
 3. Set up secrets for your GitHub repository:
 
-   - `CONTAINER_NAME`: The Docker image name (e.g., `bacancy-devops-training`).
    - `HOST`: Your server's hostname or IP address.
    - `USERNAME`: Your server's username.
    - `KEY`: Your SSH private key for authentication.
    - `PORT`: The SSH port (usually 22).
+      ###### environment variables
+   - `CONTAINER_NAME`: The Docker image name (e.g., `bacancy-devops-training`).
 
 ## Conclusion
 
