@@ -1,4 +1,4 @@
-# Docker and GitHub Actions Deployment for VueJS Applications
+# Deploy VueJS Applications with docker 
 
 ## Introduction
 
